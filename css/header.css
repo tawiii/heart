@@ -1,0 +1,26 @@
+:root {
+  --font-title: 18px;
+  --grad-start: #d580ff;
+  --grad-end: #ffaa00;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 20px;
+  background: linear-gradient(135deg, var(--grad-start), var(--grad-end));
+}
+
+.title {
+  position: relative;
+  padding: 5px 10px;
+  border: 1px solid currentColor;
+  border-radius: var(--font-title);
+  font: 100 var(--font-title)/1 sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: #fff;
+}
