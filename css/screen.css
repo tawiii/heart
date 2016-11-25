@@ -3,9 +3,14 @@
 @import url(main.css);
 @import url(main.css);
 @import url(animate.css);
+@import url(cloud.css);
 * {
   padding: 0;
   margin: 0;
   list-style: none;
   text-decoration: none;
+}
+
+body {
+  background-color: #fae5e3;
 }

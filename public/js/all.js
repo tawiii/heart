@@ -1,6 +1,6 @@
  
 $(document).ready(function(){
-	$(".header").on("click","a", function (event) {
+	$(".header").on("click",".ss", function (event) {
 		//отменяем стандартную обработку нажатия по ссылке
 		event.preventDefault();
 
@@ -8,13 +8,25 @@ $(document).ready(function(){
 		var id  = $(this).attr('href'),
 
 		//узнаем высоту от начала страницы до блока на который ссылается якорь
-			top = $(id).offset().top;
+		 top = $(id).offset().top;
 		
 		//анимируем переход на расстояние - top за 1500 мс
 		$('body,html').animate({scrollTop: top}, 1000);
 	});
 
+	$(".about").click(function(e){
+		e.preventDefault();
+		$(".cont").slideUp("100");
+        $(".abt").slideToggle("slow");
+        $(this).show();
+    });
 
+    $(".contact").click(function(e){
+		e.preventDefault();
+		$(".abt").slideUp("100");
+        $(".cont").slideToggle("slow");
+        $(this).show();
+    });
 	
 });
 
@@ -54,12 +66,13 @@ $(document).ready(function(){
 jQuery(function(f){
     var element = f('.spot, .say');
     f(window).scroll(function(){
+    	$('.abt, .cont').hide("slow");
         element['fade'+ (f(this).scrollTop() > 600 ? 'In': 'Out')](100);           
     });
 
     $('.spot_link').on('click', function(event) {
     	event.preventDefault();
     	$('.work').show();
-    	$('.spot_link, .say_img').hide();
+    	$('.spot_link, .say').remove();
     });
 });

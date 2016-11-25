@@ -11,6 +11,6 @@ document.addEventListener('mousemove', (e) => {
   
   document.documentElement.style.setProperty('--grad-start', gradStart)
   document.documentElement.style.setProperty('--grad-end', gradEnd)
-  p.setAttribute('data-gradStart', gradStart)
-  p.setAttribute('data-gradEnd', gradEnd)
+  // p.setAttribute('data-gradStart', gradStart)
+  // p.setAttribute('data-gradEnd', gradEnd)
 })

@@ -1,0 +1,170 @@
+.sprite-sprite, .big, .med, .small {
+  background-image: url('../img/../img/sprite-s80f5c5ef36.png');
+  background-repeat: no-repeat;
+}
+
+.big {
+  background-position: 0 -168px;
+  width: 394px;
+  height: 270px;
+  animation-name: pulse;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  position: absolute;
+  top: 30px;
+  left: -3%;
+}
+
+.med {
+  background-position: 0 -926px;
+  width: 66px;
+  height: 52px;
+  animation-name: pulse;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  position: absolute;
+  bottom: 431px;
+  left: 33%;
+}
+
+.small {
+  background-position: 0 -1423px;
+  width: 39px;
+  height: 30px;
+  animation-name: pulse;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  position: absolute;
+  bottom: 400px;
+  left: 40%;
+}
+
+.list {
+  font-family: 'Chewy', cursive;
+  position: relative;
+  animation-name: tossing;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+.list_frd {
+  font-size: 20px;
+  position: absolute;
+  top: 17px;
+  left: 20%;
+}
+.list_htl {
+  font-size: 20px;
+  position: absolute;
+  top: 70px;
+  left: 53%;
+}
+.list_css {
+  font-size: 27px;
+  position: absolute;
+  top: 14px;
+  left: 48%;
+}
+.list_boo {
+  font-size: 18px;
+  position: absolute;
+  top: 54px;
+  left: 15%;
+}
+.list_pho {
+  font-size: 14px;
+  position: absolute;
+  top: 49px;
+  left: 71%;
+}
+.list_bem {
+  font-size: 14px;
+  position: absolute;
+  top: 110px;
+  left: 49%;
+}
+.list_jsn {
+  font-size: 18px;
+  position: absolute;
+  top: 104px;
+  left: 10%;
+}
+.list_lod {
+  font-size: 28px;
+  position: absolute;
+  top: 80px;
+  left: 21%;
+}
+.list_glp {
+  font-size: 25px;
+  position: absolute;
+  top: 191px;
+  left: 23%;
+}
+.list_git {
+  font-size: 25px;
+  position: absolute;
+  top: 140px;
+  left: 14%;
+}
+.list_sas {
+  font-size: 27px;
+  position: absolute;
+  top: 127px;
+  left: 34%;
+}
+.list_ajx {
+  font-size: 17px;
+  position: absolute;
+  top: 97px;
+  left: 85%;
+}
+.list_jat {
+  font-size: 31px;
+  position: absolute;
+  top: 127px;
+  left: 59%;
+}
+.list_ree {
+  font-size: 14px;
+  position: absolute;
+  top: 106px;
+  left: 63%;
+}
+.list_ecm {
+  font-size: 13px;
+  position: absolute;
+  top: 164px;
+  left: 41%;
+}
+.list_jqy {
+  font-size: 41px;
+  position: absolute;
+  top: 177px;
+  left: 56%;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(0.9);
+    opacity: 0.5;
+  }
+  50% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(0.9);
+    opacity: 0.5;
+  }
+}
+@keyframes tossing {
+  0% {
+    transform: rotate(-2deg);
+  }
+  50% {
+    transform: rotate(2deg);
+  }
+  100% {
+    transform: rotate(-2deg);
+  }
+}
