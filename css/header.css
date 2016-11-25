@@ -1,3 +1,8 @@
+.sprite-sprite, .abt_link, .abt_link:hover, .icon_git, .icon_mail, .icon_skype {
+  background-image: url('../img/../img/sprite-s80f5c5ef36.png');
+  background-repeat: no-repeat;
+}
+
 :root {
   --font-title: 18px;
   --grad-start: #d580ff;
@@ -5,22 +10,184 @@
 }
 
 .header {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   height: 100vh;
-  padding: 20px;
   background: linear-gradient(135deg, var(--grad-start), var(--grad-end));
 }
 
-.title {
+.abt {
+  float: right;
   position: relative;
-  padding: 5px 10px;
-  border: 1px solid currentColor;
-  border-radius: var(--font-title);
-  font: 100 var(--font-title)/1 sans-serif;
-  text-align: center;
-  text-transform: uppercase;
-  letter-spacing: 3px;
+  display: none;
+  height: 600px;
+  width: 454px;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.abt_img {
+  height: 260px;
+  width: 454px;
+  background-image: url(../img/photo.jpg);
+  position: absolute;
+}
+.abt_name {
+  padding: 0 0 0 30px;
+  position: absolute;
+  top: 50%;
+  font-family: 'Ravi Prakash', cursive;
+  line-height: 32px;
+}
+.abt_name-hi {
+  font-size: 60px;
+  font-weight: bold;
+  color: #bde0ff;
+}
+.abt_name-my {
+  font-size: 30px;
+}
+.abt_name-an {
+  font-size: 50px;
+  color: #059fff;
+}
+.abt_name-nice {
+  font-size: 50px;
+  color: #efa94a;
+}
+.abt_link {
+  background-position: 0 -626px;
+  width: 55px;
+  height: 55px;
+  position: absolute;
+  top: 86%;
+  left: 80%;
+}
+.abt_link:hover {
+  background-position: 0 -681px;
+}
+
+.information {
+  position: absolute;
+  top: 90%;
+  left: 3%;
+  color: #ccccff;
+  font-size: 20px;
+  font-family: 'Chewy', cursive;
+}
+
+.cont {
+  float: right;
+  position: relative;
+  display: none;
+  height: 600px;
+  width: 454px;
+  background-color: rgba(155, 129, 39, 0.5);
+  clear: both;
+}
+.cont_number {
+  position: absolute;
+  top: 95%;
+  left: 2%;
+  font-family: 'Chewy', cursive;
+  font-size: 18px;
+  color: #ccccff;
+}
+
+.wrap_form {
+  position: absolute;
+  width: 100%;
+}
+
+.form {
+  width: 180px;
+  margin: 0 auto;
+}
+.form_inp {
+  display: block;
+  border: 1px solid #ffff99;
+  padding: 8px 5px 8px 5px;
+  margin: 54px 0 0 0;
+  background-color: transparent;
+  outline: none;
   color: #fff;
+}
+.form_textarea {
+  width: 300px;
+  height: 100px;
+  margin: 54px 0 37px -61px;
+}
+.form_button {
+  background-color: transparent;
+  padding: 0 5px 0 5px;
+  border: 4px solid #ffff99;
+  color: #ffdf84;
+  font-family: 'Chewy', cursive;
+  font-size: 25px;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+.form_button:hover {
+  transform: scale(1.1);
+  background-color: #ff887a;
+}
+
+::-webkit-input-placeholder {
+  color: #ffdf84;
+}
+
+::-moz-placeholder {
+  color: #ffdf84;
+}
+
+:-moz-placeholder {
+  color: #ffdf84;
+}
+
+:-ms-input-placeholder {
+  color: #ffdf84;
+}
+
+.icon {
+  position: absolute;
+  top: 80%;
+  left: 35%;
+}
+.icon_git, .icon_mail, .icon_skype {
+  display: inline-block;
+  background-position: 0 -786px;
+  width: 70px;
+  height: 70px;
+  margin: 0 25px 0 0;
+}
+.icon_mail {
+  background-position: 0 -856px;
+}
+.icon_skype {
+  background-position: 0 -1353px;
+}
+
+.btn {
+  width: 90px;
+  text-align: center;
+  font-family: 'Chewy', cursive;
+  font-size: 20px;
+  position: relative;
+  display: inline-block;
+  color: #777674;
+  font-weight: bold;
+  text-decoration: none;
+  text-shadow: rgba(255, 255, 255, 0.5) 1px 1px, rgba(100, 100, 100, 0.3) 3px 7px 3px;
+  user-select: none;
+  padding: 1em 2em;
+  outline: none;
+  border-radius: 3px / 100%;
+  background-image: linear-gradient(45deg, rgba(255, 255, 255, 0) 30%, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0) 70%), linear-gradient(to right, white, rgba(255, 255, 255, 0) 20%, rgba(255, 255, 255, 0) 90%, rgba(255, 255, 255, 0.3)), linear-gradient(to right, #7d7d7d, rgba(255, 255, 255, 0.9) 45%, rgba(125, 125, 125, 0.5)), linear-gradient(to right, #7d7d7d, rgba(255, 255, 255, 0.9) 45%, rgba(125, 125, 125, 0.5)), linear-gradient(to right, #dfbeaa, rgba(255, 255, 255, 0.9) 45%, rgba(223, 190, 170, 0.5)), linear-gradient(to right, #dfbeaa, rgba(255, 255, 255, 0.9) 45%, rgba(223, 190, 170, 0.5));
+  background-repeat: no-repeat;
+  background-size: 200% 100%, auto, 100% 2px, 100% 2px, 100% 1px, 100% 1px;
+  background-position: 200% 0, 0 0, 0 0, 0 100%, 0 4px, 0 calc(100% - 4px);
+  box-shadow: rgba(0, 0, 0, 0.5) 3px 10px 10px -10px;
+}
+.btn:hover {
+  transition: .5s linear;
+  background-position: -200% 0, 0 0, 0 0, 0 100%, 0 4px, 0 calc(100% - 4px);
+}
+.btn:active {
+  top: 1px;
 }

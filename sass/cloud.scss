@@ -1,0 +1,89 @@
+@import "../img/sprite/*.png";
+
+.big{
+	@include sprite-sprite(big);
+	width: 394px;
+	height: 270px;
+	animation-name: pulse;
+	animation-duration: 5s;  
+	animation-iteration-count: infinite;
+	position: absolute;
+    top: 30px;
+    left: -3%;
+}
+
+.med{
+	@include sprite-sprite(mid);
+	width: 66px;
+	height: 52px;
+	animation-name: pulse;
+	animation-duration: 5s;  
+	animation-iteration-count: infinite;
+	position: absolute;
+	bottom: 431px;
+    left: 33%;
+}
+
+.small{
+	@include sprite-sprite(small);
+	width: 39px;
+	height: 30px;
+	animation-name: pulse;
+	animation-duration: 5s;  
+	animation-iteration-count: infinite;
+	position: absolute;
+	bottom: 400px;
+    left: 40%;
+}
+
+.list{
+	font-family: 'Chewy', cursive;
+	position: relative;
+	animation-name: tossing;
+	animation-duration: 4s; 
+	animation-iteration-count: infinite;
+
+	&_frd{font-size: 20px;position: absolute;top: 17px;left: 20%;}
+	&_htl{font-size: 20px;position: absolute;top: 70px;left: 53%;}
+	&_css{font-size: 27px;position: absolute;top: 14px;left: 48%;}
+	&_boo{font-size: 18px;position: absolute;top: 54px;left: 15%;}
+	&_pho{font-size: 14px;position: absolute;top: 49px;left: 71%;}
+	&_bem{font-size: 14px;position: absolute;top: 110px;left: 49%;}
+	&_jsn{font-size: 18px;position: absolute;top: 104px;left: 10%;}
+	&_lod{font-size: 28px;position: absolute;top: 80px;left: 21%;}
+	&_glp{font-size: 25px;position: absolute;top: 191px;left: 23%;}
+	&_git{font-size: 25px;position: absolute;top: 140px;left: 14%;}
+	&_sas{font-size: 27px;position: absolute;top: 127px;left: 34%;}
+	&_ajx{font-size: 17px;position: absolute;top: 97px;left: 85%;}
+	&_jat{font-size: 31px;position: absolute;top: 127px;left: 59%;}
+	&_ree{font-size: 14px;position: absolute;top: 106px;left: 63%;}
+	&_ecm{font-size: 13px;position: absolute;top: 164px;left: 41%;}
+	&_jqy{font-size: 41px;position: absolute;top: 177px;left: 56%;}
+}
+ 
+ @keyframes pulse {
+    0% {
+        transform: scale(0.9);
+        opacity: 0.5;       
+    }
+    50% {
+        transform: scale(1);
+        opacity: 1; 
+    }   
+    100% {
+        transform: scale(0.9);
+        opacity: 0.5;   
+    }           
+}
+
+@keyframes tossing {
+    0% {
+        transform: rotate(-2deg);   
+    }
+    50% {
+        transform: rotate(2deg);
+    }
+    100% {
+        transform: rotate(-2deg);   
+    }                       
+}

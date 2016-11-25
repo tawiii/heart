@@ -1,10 +1,11 @@
 .frame{
         display:block;
 		background: url('http://www.jonadinges.com/avatar/body.png') no-repeat;
-        position: absolute;
+        position: absolute; 
         width: 972px;
         left:50%;
         margin-left:-486px;
+        height: 730px;
         -webkit-perspective: 1000;
     }
     .layer{
